@@ -20,9 +20,9 @@ int main(void){
 	
 	decompress(backgroundBitmap, BG_GFX,  LZ77Vram);
 
-    int bgsub=bgInitSub(3, BgType_Bmp8, BgSize_B8_256x256, 5,0); 
+    int bgsub=bgInitSub(2, BgType_Bmp8, BgSize_B8_256x256, 5,0); 
 
-    dmaCopy(fondo2Bitmap,bgGetGfxPtr(bgsub),256*217);
+    dmaCopy(fondo2Bitmap,bgGetGfxPtr(bgsub),256*256);
     dmaCopy(fondo2Pal,BG_PALETTE_SUB,256*2);
     
     while(true){
