@@ -18,13 +18,13 @@ int main(){
     consoleSelect(&topScreen);
 	iprintf("\n\n\tLa Jaqueria\n");
 	iprintf("\tTest texto Superior\n");
-	iprintf("\twww.lajaqueria.org");
+	iprintf("\twww.lajaqueria.org\x1b[39m");
 
 	consoleSelect(&bottomScreen);   
 
     iprintf("\n\n\tLa Jaqueria\n");
 	iprintf("\tTest texto Inferior\n");
-	iprintf("\twww.lajaqueria.org");
+	iprintf("\t\twww.lajaqueria.org");
 
     while(true){
         swiWaitForVBlank();
