@@ -20,9 +20,9 @@ int main(void)
     decompress(backgroundBitmap, BG_GFX, LZ77Vram);
 
     consoleSelect(&bottomScreen);
-    iprintf("\n\n\t\tJaqueria Rules\n");
-    iprintf("\tClub de desarrollo retro\n");
-    iprintf("\t\t256 color bitmap demo");
+    iprintf("\x1b[1;6HJaqueria Rules\n");
+    iprintf("\x1b[2;2H\x1b[35mClub de desarrollo retro\n");
+    iprintf("\x1b[3;3H\x1b[0m256 color bitmap demo");
     while (true)
     {
         swiWaitForVBlank();
