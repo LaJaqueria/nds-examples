@@ -7,3 +7,18 @@ En este repositorio, puedes encontrar los distintos ejemplos, relacionados con e
 * backgrounds: Ejemplo usando 1 fondo en la pantalla superior y texto en la inferior.
 * background2: Ejemplo mostrando 2 fondos.
 * Sprites: Ejemplo usando 1 fondo y sprite.
+
+Puedes utilizar docker para generar las roms; con las siguientes instrucciones:
+
+1.- Clonar el siguiente repositorio: [https://github.com/zerasul/dockerretro](https://github.com/zerasul/dockerretro).
+
+2.- En la carpeta nds, generar la imagen:
+
+```bash
+docker build -t nds .
+```
+3.- Para compilar, ejecutar la siguiente instrucción con docker:
+
+```bash
+docker run --rm -v $PWD:/src/nds nds # Para Windows cambiar $PWD por %CD%.
+```
